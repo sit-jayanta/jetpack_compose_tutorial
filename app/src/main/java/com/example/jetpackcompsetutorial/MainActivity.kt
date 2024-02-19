@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.annotation.ColorRes
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Box
@@ -31,11 +32,14 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.RectangleShape
+import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.jetpackcompsetutorial.ui.theme.JetPackCompseTutorialTheme
+import com.example.jetpackcompsetutorial.ui.theme.Purple80
+import com.example.jetpackcompsetutorial.ui.theme.darkBlue
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -96,7 +100,7 @@ Surface(shape = MaterialTheme.shapes.medium , shadowElevation = 15.dp , modifier
                 Text(
                     text = desc,
                     fontSize = 12.sp,
-                    color = MaterialTheme.colorScheme.error,
+                    color = darkBlue,
                     style = MaterialTheme.typography.titleSmall
                 )
             }
